@@ -1,0 +1,118 @@
+
+
+.headerContent {
+    text-align: center;
+    margin-top: 20px;
+}
+.heading {
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+}
+.input {
+    text-decoration: none;
+    background-color: white;
+    color: hsl(0, 0%, 17%);
+    width: 45%;
+    height: 40px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 15px;
+    margin-top: 25px;
+    z-index: 1;
+    font-size: 14px;
+}
+.input:focus {
+    outline: none;
+}
+.dataComponent {
+    align-self: center;
+    /* position: absolute  ; */
+    display: flex;
+    margin-top: 50px;
+    background-color: white;
+    height: 150px;
+    width: 80%;
+    /* margin-left: 80px; */
+    font-size: 18px;
+    grid: 1rem;
+    /* flex-wrap: wrap; */
+    text-align: left;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0px 20px hsl(0, 0%, 30%);
+}
+.column {
+    flex: 25%;
+}
+.mapComponent {
+    position: fixed;
+    /* display: inline-block; */
+    width: 100%;
+    height: calc(100% - 250px);
+    margin-top: -70px;
+    z-index: -1;
+}
+.columnHeading {
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.columnData {
+    color: hsl(0, 0%, 17%);
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 25px;
+}
+.span {   
+  border-right: 1px solid hsl(0, 0%, 17%);
+  height: 80px;
+}
+
+.button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(0, 0%, 17%);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.button:hover {
+    background-color: hsl(0, 0%, 25%);
+}
+
+@media screen and (max-width: 768px){
+
+    .dataComponent {
+        height: 300px;
+        width: 90%;
+        margin-top: 10px;
+        /* flex-direction: column; */
+        display: block;
+        grid: 0;
+    }
+    .span {
+        border: none;
+    }
+    .columnHeading {
+        font-size: 10px;
+        margin-left: 0;
+    }
+    .columnData {
+        font-size: 14px;
+        margin-left: 0;
+    } 
+    .col {
+        text-align: center;
+        
+    }
+    .mapComponent {
+        margin-top: -180px;
+    }
+    .input {
+        width: 80%;
+    }
+}
